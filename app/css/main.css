@@ -364,7 +364,7 @@ a:hover {
 
 .banner__bottom-menu__list {
   list-style: none;
-  margin: 0 28px 0 0;
+  margin: 0 24px 0 0;
   padding: 0;
   display: flex;
 }
@@ -475,4 +475,62 @@ a:hover {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
+}
+
+.prev-left__n {
+  position: absolute;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #f8f8f8;
+  background-image: url(../img/str.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: -47px;
+  right: 59px;
+  transform: rotate(180deg);
+  outline: none;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+
+.prev-right__n {
+  position: absolute;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #f8f8f8;
+  background-image: url(../img/str.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: -47px;
+  right: 0px;
+  outline: none;
+  padding: 15px 40px 15px 37px;
+}
+
+
+.prev-left__n:focus, .prev-right__n:focus {
+  outline: none;
+}
+
+.act-products {
+  padding: 68px 0 100px;
+}
+
+.section-ttl {
+  font-weight: 450;
+  font-size: 50px;
+  line-height: 50px;
+  color: #282828;
+}
+
+.act-products__item {
+  width: 270px;
+  background: #F7F7F7;
+  border-radius: 5px;
 }
