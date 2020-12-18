@@ -54,4 +54,11 @@ $(document).ready(function () {
         ]
     });
 
+    $('button[data-tab]').click(function () {
+        var target = $(this).attr('data-tab');
+        $('[data-tab]').removeClass('active');
+        $('section[data-tab="' + target + '"]').addClass('active');
+        $(this).toggleClass('active');
+    });
+
 });

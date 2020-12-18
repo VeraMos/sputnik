@@ -2,7 +2,7 @@
 @import url(../fonts/fonts.css);
 body {
   scroll-behavior: smooth;
-  background-color: #fff;
+  background-color: #f5f5f5;
   font-family: 'FuturaPT';
   font-size: 17px;
   line-height: 22px;
@@ -533,6 +533,7 @@ a:hover {
 
 .act-products {
   padding: 68px 0 100px;
+  background: #fff;
 }
 
 .section-ttl {
@@ -642,6 +643,7 @@ a:hover {
 
 .news {
   padding-bottom: 10px;
+  background: #fff;
 }
 
 .seo {
@@ -884,4 +886,165 @@ a:hover {
 .footer-icon__link {
   display: inline-block;
   margin: 0 15px;
+}
+
+.bread-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding: 30px 0 40px;
+}
+
+.bread-list a {
+  font-size: 14px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.bread-list li {
+  font-size: 14px;
+  line-height: 18px;
+  padding-right: 25px;
+  position: relative;
+}
+
+.bread-list li:after {
+  position: absolute;
+  content: ">";
+  top: 1px;
+  right: 7px;
+}
+
+.bread-list li:last-child:after {
+  display: none;
+}
+
+.contacts-block {
+  background: #56973D;
+  border-radius: 5px;
+  padding: 25px 30px 25px 110px;
+  display: flex;
+  justify-content: space-between;
+  margin: 23px 0 45px;
+  position: relative;
+}
+
+.contacts-block:before {
+  position: absolute;
+  content: "";
+  top: 17px;
+  left: 0;
+  background: url('../img/cont-bl.svg') no-repeat;
+  width: 76px;
+  height: 76px;
+  background-size: contain;
+}
+
+.contacts-block p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  max-width: 758px;
+  margin: 0;
+}
+
+.contacts-block__btn {
+  width: 205px;
+  height: 53px;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #282828;
+  padding: 18px 40px;
+}
+
+.contacts-inn__city-ttl {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.contacts-inn__city-link {
+  border: none;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+  line-height: 20.5px;
+}
+
+.contacts-inn__city {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-bottom: 50px;
+}
+
+.contacts-inn__city-link:hover {
+  background: #56973D;
+  color: #fff;
+}
+
+.contacts-inn__city-link.active {
+  background: #56973D;
+  color: #fff;
+}
+
+.contacts-inn__map {
+  width: 100%;
+  margin-bottom: 95px;
+}
+
+.contacts-inn__map img {
+  width: 100%;
+}
+
+.contacts-inn__item {
+  margin-bottom: 150px;
+  display: none;
+}
+
+.contacts-inn__adr {
+  justify-content: space-between;
+}
+
+.contacts-inn__img {
+  max-width: 845px;
+  width: 72%;
+}
+
+.contacts-inn__img img {
+  width: 100%;
+}
+
+.contacts-inn__adr p {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 22px;
+}
+
+.contacts-inn__adr a {
+  font-size: 18px;
+  line-height: 20px;
+  color: inherit;
+  display: block;
+  margin-bottom: 22px;
+}
+
+.contacts-inn__ttl {
+  font-weight: 600;
+  font-size: 30px!important;
+  line-height: 32px!important;
+}
+
+.contacts-inn__item.active {
+  display: block;
 }
