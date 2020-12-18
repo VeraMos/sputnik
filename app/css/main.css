@@ -1247,3 +1247,76 @@ a:hover {
 .partnet-reg__item img {
   margin-right: 30px;
 }
+
+.serv-centr__adr {
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
+  font-weight: 600;
+  margin: 36px 0 17px; 
+}
+
+.serv-centr {
+  font-size: 17px;
+  line-height: 22px;
+  color: #606060;
+  background: #fff;
+  padding-bottom: 100px;
+}
+
+.serv-centr .dot-n {
+  background: #56973D;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.serv-centr .dot {
+  background: #56973D;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 20px 0 10px;
+}
+
+.serv-centr_block {
+  padding: 100px 0 70px;
+}
+
+.serv-centr_block-inn {
+  padding: 25px;
+  background-color: #fff;
+  max-width: 470px;
+  position: absolute;
+  bottom: 55px;
+  left: 5px;
+  border-radius: 3px;
+}
+
+.serv-centr__img {
+  text-align: right;
+}
+
+.serv-centr_block-inn a {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  color: #606060;
+  display: block;
+  margin-bottom: 30px; 
+}
+
+.serv-centr_block-inn p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #606060;
+}
+
+.serv-centr_block-wpr {
+  position: relative;
+}
