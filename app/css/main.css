@@ -1561,6 +1561,7 @@ a:hover {
 
 .ordering-form {
   margin-top: 50px;
+  padding-bottom: 100px;
 }
 
 .ordering-input {
@@ -1688,6 +1689,7 @@ a:hover {
 .ordering-adr__block {
   padding: 38px 0 50px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .ordering-adr__block:after {
@@ -1729,4 +1731,139 @@ a:hover {
 .btn-w:hover {
   background: #E5831E;
   color: #fff;
+}
+
+.ordering-adr__item p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.ordering-adr__item span {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.ordering-adr__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  align-items: center;
+  position: relative;
+}
+
+.ordering-adr__item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #CACACA;
+  height: 1px;
+  width: 100%;
+}
+
+.ordering-adr__item:last-child:after {
+  background: transparent;
+}
+
+.ordering-adr__block-ttl {
+  font-size: 20px;
+  line-height: 35px;
+  margin-bottom: 0px;
+  font-weight: 450;
+}
+
+.ordering-adr__link {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  color: #282828;
+  margin: -30px 0 14px;
+}
+
+.ordering-adr__block-inn p {
+  margin-bottom: 5px;
+}
+
+.ordering-adr__block-inn {
+  margin-bottom: 20px;
+}
+
+.ordering-adr__block-inn__ttl {
+  font-weight: 600;
+}
+
+.ordering-adr__block-inn__ttl span {
+  display: block;
+  font-size: 14px;
+}
+
+.ordering-adr__list {
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: underline;
+  color: #282828;
+}
+
+.ordering-form__yur {
+  font-size: 20px;
+  line-height: 35px;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.ordering-form__yur:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #CACACA;
+  height: 1px;
+  width: 100%;
+}
+
+.ordering-form__yur a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.ordering-form__yur .btn{
+  display: inline-block;
+  margin-left: 25px;
+}
+
+
+.ordering-form__yur.active {
+  display: block;
+}
+
+.ordering-form__fiz.active {
+  display: block;
+}
+
+.ordering-form__yur {
+  display: none;
+}
+
+.ordering-form__fiz {
+  display: none;
+}
+
+.ordering-form__deliv.active {
+  display: block;
+}
+
+.ordering-form__pickup.active {
+  display: block;
+}
+
+.ordering-form__pickup {
+  display: none;
+}
+
+.ordering-form__deliv {
+  display: none;
 }

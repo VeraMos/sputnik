@@ -107,4 +107,24 @@ $(document).ready(function () {
         ]
     });
 
+     $('.ordering-label__fiz').click(function () {
+        $('.ordering-form__fiz').addClass('active');
+        $('.ordering-form__yur').removeClass('active');
+    });
+
+     $('.ordering-label__yur').click(function () {
+        $('.ordering-form__yur').addClass('active');
+        $('.ordering-form__fiz').removeClass('active');
+    });
+
+     $('.ordering-label__deliv').click(function () {
+        $('.ordering-form__deliv').addClass('active');
+        $('.ordering-form__pickup').removeClass('active');
+    });
+
+     $('.ordering-label__pickup').click(function () {
+        $('.ordering-form__pickup').addClass('active');
+        $('.ordering-form__deliv').removeClass('active');
+    });                                 
+
 });
