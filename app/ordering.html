@@ -139,57 +139,69 @@
 			<a class="basket-btn__link" href="">Оплата</a>
 		</div>
 		<form class="ordering-form">
-			<label class="ordering-label"><p>Тип плательщика</p>
+			<div class="ordering-label"><p>Тип плательщика</p>
 				<div class="d-flex flex-wrap ordering-range_wrap">
-					<input class="ordering-range" type="radio" name="basket-radio" value="fizlizo" checked="">
-					<p class="ordering-range__text">Физическое лицо</p>
-					<input class="ordering-range" type="radio" name="basket-radio" value="yurlizo">
-					<p class="ordering-range__text">Юридическое лицо</p>
+					<label class="ordering-label__fiz">
+						<input class="ordering-range" type="radio" name="basket-radio" value="fizlizo" checked="">
+						<p class="ordering-range__text">Физическое лицо</p>
+					</label>
+					<label class="ordering-label__uyr">
+						<input class="ordering-range" type="radio" name="basket-radio" value="yurlizo">
+						<p class="ordering-range__text">Юридическое лицо</p>
+					</label>
 				</div>
-			</label>
-			<label class="ordering-label"><p>Местоположение</p>
-				<input type="text" class="ordering-input" placeholder="Введите название города">
-			</label>
-			<label class="ordering-label"><p>Индекс</p>
-				<input type="text" class="ordering-input" placeholder="Введите индекс">
-			</label>
-			<label class="ordering-label">
+			</div>
+			<div class="ordering-form__fiz">
+				<label class="ordering-label"><p>Местоположение</p>
+					<input type="text" class="ordering-input" placeholder="Введите название города">
+				</label>
+				<label class="ordering-label"><p>Индекс</p>
+					<input type="text" class="ordering-input" placeholder="Введите индекс">
+				</label>
+			</div> 
+			<div class="ordering-label">
 				<div class="d-flex flex-wrap ordering-range_wrap">
-					<input class="ordering-range" type="radio" name="basket-radio" value="fizlizo" checked="">
-					<p class="ordering-range__text">Самовывоз</p>
-					<input class="ordering-range" type="radio" name="basket-radio" value="yurlizo">
-					<p class="ordering-range__text">Доставка</p>
+					<label class="ordering-label__pickup">
+						<input class="ordering-range" type="radio" name="basket-radio__deliv" value="pickup" checked="">
+						<p class="ordering-range__text">Самовывоз</p>
+					</label>
+					<label class="ordering-label__deliv">
+						<input class="ordering-range" type="radio" name="basket-radio__deliv" value="delivery">
+						<p class="ordering-range__text">Доставка</p>
+					</label>
 				</div>
-			</label>
+			</div>
 			<div class="ordering-map">
 				<img src="img/map.jpg" alt="Карта">
 			</div>
-			<p>Пункты самовывоза</p>
-			<a href="">Изменить</a>
-			<div>
-				г. Самара, ул. Санфировой, д. 95
-				Склад на Санфировой
-				Адрес: г. Самара, ул. Санфировой, д. 95
-				Телефон: 8-800-550-60-57
-				Режим работы: Пн-Пт 9.00 - 20.00, Сб 9.00 - 18.00
-				Описание: Центральный Офис, оптово-розничный склад
+			<div class="ordering-adr__block">
+				<p class="ordering-adr__block-ttl">Пункты самовывоза</p>
+				<a href="" class="ordering-adr__link">Изменить</a>
+				<div class="ordering-adr__block-inn">
+					<p>г. Самара, ул. Санфировой, д. 95</p>
+					<p>Склад на Санфировой</p>
+					<p>Адрес: г. Самара, ул. Санфировой, д. 95</p>
+					<p>Телефон: 8-800-550-60-57</p>
+					<p>Режим работы: Пн-Пт 9.00 - 20.00, Сб 9.00 - 18.00</p>
+					<p>Описание: Центральный Офис, оптово-розничный склад</p>
+				</div>
+				<a href="" class="btn">Выбрать</a>
 			</div>
-			<a href="" class="">Выбрать</a>
 			<div class="ordering-adr__item">
 				<p>г. Самара, ул. Красных Коммунаров - Ново - Вокзальная (ТЦ «На Птичке»), сек. 3-26</p>
-				<button type="button">Выбрать</button>
+				<button type="button" class="btn btn-w">Выбрать</button>
 			</div>
 			<div class="ordering-adr__item">
 				<p>г. Самара, ул. Ташкентская, д. 196 А</p>
-				<button type="button">Выбрать</button>
+				<button type="button" class="btn btn-w">Выбрать</button>
 			</div>
 			<div class="ordering-adr__item">
 				<p>г. Бузулук, ул. Комсомольская д.113Б</p>
-				<button type="button">Выбрать</button>
+				<button type="button" class="btn btn-w">Выбрать</button>
 			</div>
 			<div class="ordering-adr__item">
 				<p>г. Екатеринбург, ул. Малышева, д.145а, лит.Б</p>
-				<button type="button">Выбрать</button>
+				<button type="button" class="btn btn-w">Выбрать</button>
 			</div>
 			<div class="">Весь список городов﻿</div>                                    
 		</form>
