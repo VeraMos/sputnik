@@ -125,6 +125,15 @@ $(document).ready(function () {
      $('.ordering-label__pickup').click(function () {
         $('.ordering-form__pickup').addClass('active');
         $('.ordering-form__deliv').removeClass('active');
-    });                                 
+    });
+
+    $('.ordering-label__beznal').click(function () {
+        $('.ordering-form__beznal').addClass('active');
+        $('.ordering-form__nal').removeClass('active');
+    });
+    $('.ordering-label__nal').click(function () {
+        $('.ordering-form__nal').addClass('active');
+        $('.ordering-form__beznal').removeClass('active');
+    });                                
 
 });

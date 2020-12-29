@@ -130,7 +130,7 @@
 	</div>
 </section>
 
-<section class="ordering">
+<section class="payment"> 
 	<div class="container">
 		<div class="section-ttl">Оформление заказа</div>
 		<div class="basket-btn">
@@ -138,99 +138,90 @@
 			<a class="basket-btn__link" href="">Местоположение</a>
 			<a class="basket-btn__link" href="">Оплата</a>
 		</div>
-		<form class="ordering-form">
-			<div class="ordering-label"><p>Тип плательщика</p>
+		<form class="payment-form">
+			<div class="ordering-label"><p>Оплата</p>
 				<div class="d-flex flex-wrap ordering-range_wrap">
-					<label class="ordering-label__fiz">
-						<input class="ordering-range" type="radio" name="basket-radio" value="fizlizo" checked="">
-						<p class="ordering-range__text">Физическое лицо</p>
+					<label class="ordering-label__nal">
+						<input class="ordering-range" type="radio" name="payment-radio" value="nal" checked="">
+						<p class="ordering-range__text">Наличными</p>
 					</label>
-					<label class="ordering-label__yur">
-						<input class="ordering-range" type="radio" name="basket-radio" value="yurlizo">
-						<p class="ordering-range__text">Юридическое лицо</p>						
+					<label class="ordering-label__beznal">
+						<input class="ordering-range" type="radio" name="payment-radio" value="beznal">
+						<p class="ordering-range__text">Банковский перевод</p>						
 					</label>
 				</div>
 			</div>
-			<div class="ordering-form__fiz active">
-				<label class="ordering-label"><p>Местоположение</p>
-					<input type="text" class="ordering-input" placeholder="Введите название города">
+			<div class="ordering-form__beznal">
+				<p>Юридические лица могут осуществить оплату безналичным способом со своего расчетного счета. В результате оформления заказа Вам будет предложено распечатать счет на оплату. Распечатать счет можно в любой момент после оформления заказа в Личном кабинете > Мои заказы</p>
+			</div>
+			<div class="ordering-form__nal active">
+				<label class="ordering-label"><p>Покупатель</p>
+					<input type="text" class="ordering-input" placeholder="ФИО*">
 				</label>
-				<label class="ordering-label"><p>Индекс</p>
-					<input type="text" class="ordering-input" placeholder="Введите индекс">
-				</label>
+					<input type="tel" class="ordering-input" placeholder="Телефон*">
+					<input type="email" class="ordering-input" placeholder="E-mail*">
+					<textarea class="ordering-input" rows="4" style="height: auto;">Комментарий</textarea>
 			</div>
-
-			<div class="ordering-form__yur">
-				<p>Чтобы оформить заказ как юридическое лицо, Вам необходимо <a href="">Зарегистрироваться</a></p>
-				<p>Есть учетная запись?<a href="" class="btn btn-w">Войти</a></p>
-			</div> 
-
-			<div class="ordering-label">
-				<div class="d-flex flex-wrap ordering-range_wrap">
-					<label class="ordering-label__pickup">
-						<input class="ordering-range" type="radio" name="basket-radio__deliv" value="pickup" checked="">
-						<p class="ordering-range__text">Самовывоз</p>
-					</label>
-					<label class="ordering-label__deliv">
-						<input class="ordering-range" type="radio" name="basket-radio__deliv" value="delivery">
-						<p class="ordering-range__text">Доставка</p>
-					</label>
+			<div class="table-prod__wpr">
+				<p>Товары в заказе</p>
+				<table class="table-prod">
+					<tbody>
+						<tr>
+							<td class="table-prod__img">
+								<img src="img/prod1.jpg" alt="товар в заказе">
+							</td>
+							<td>
+								<span>Артикул: B1129</span>
+								<p>Кольцо под растяжку для мачт ﻿REXANT﻿</p>
+							</td>
+							<td>2 шт</td>
+							<td>478,00 ₽</td>
+						</tr>
+						<tr>
+							<td class="table-prod__img">
+								<img src="img/prod1.jpg" alt="товар в заказе">
+							</td>
+							<td>
+								<span>Артикул:  B114567</span>
+								<p>Приемник GS B-528 ﻿+ карта лайт ﻿7 дней 4к (9)</p>
+							</td>
+							<td>1 шт</td>
+							<td>6 390,00 ₽</td>
+						</tr>
+						<tr>
+							<td class="table-prod__img">
+								<img src="img/prod1.jpg" alt="товар в заказе">
+							</td>
+							<td>
+								<span>Артикул: B114567</span>
+								<p>СКН 900-1200 (100)</p>
+							</td>
+							<td>2 шт</td>
+							<td>1 000,00 ₽</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<button type="submit" class="btn btn-payment">Оформить заказ</button>
+			<p class="policy-payment">Нажимая кнопку «Оформить заказ», вы даете Согласие на <a href="">обработку персональных данных</a> на условиях и для целей, определенных <a href="">Политикой конфиденциальности</a></p>
+			<div class="order">
+				<div class="order-block">
+					<p>Сумма заказа</p>
+					<span>6 148,40 ₽</span>
+				</div>
+				<div class="order-block">
+					<p>В том числе НДС</p>
+					<span>6 148,40 ₽</span>
+				</div>
+				<div class="order-metod">
+					<p>Самовывоз</p>
+				</div>
+				<div class="order-block">
+					<p>Итого с НДС</p>
+					<span>7 868,00 ₽</span>
 				</div>
 			</div>
-			<div class="ordering-form__pickup active">
-				<div class="ordering-map">
-					<img src="img/map.jpg" alt="Карта">
-				</div>
-				<div class="ordering-adr__block">
-					<p class="ordering-adr__block-ttl">Пункты самовывоза</p>
-					<a href="" class="ordering-adr__link">Изменить</a>
-					<div class="ordering-adr__block-inn">
-						<p class="ordering-adr__block-inn__ttl">г. Самара, ул. Санфировой, д. 95<span>Склад на Санфировой</span></p>
-						<p>Адрес: г. Самара, ул. Санфировой, д. 95</p>
-						<p>Телефон: 8-800-550-60-57</p>
-						<p>Режим работы: Пн-Пт 9.00 - 20.00, Сб 9.00 - 18.00</p>
-						<p>Описание: Центральный Офис, оптово-розничный склад</p>
-					</div>
-					<a href="" class="btn">Выбрать</a>
-				</div>
-				<div class="ordering-adr__item">
-					<p>г. Самара, ул. Красных Коммунаров - Ново - Вокзальная<br>
-					<span>(ТЦ «На Птичке»), сек. 3-26</span></p>
-					<button type="button" class="btn btn-w">Выбрать</button>
-				</div>
-				<div class="ordering-adr__item">
-					<p>г. Самара, ул. Ташкентская, д. 196 А</p>
-					<button type="button" class="btn btn-w">Выбрать</button>
-				</div>
-				<div class="ordering-adr__item">
-					<p>г. Бузулук, ул. Комсомольская д.113Б</p>
-					<button type="button" class="btn btn-w">Выбрать</button>
-				</div>
-				<div class="ordering-adr__item">
-					<p>г. Екатеринбург, ул. Малышева, д.145а, лит.Б</p>
-					<button type="button" class="btn btn-w">Выбрать</button>
-				</div>
-				<div class="ordering-adr__item">
-					<div class="ordering-adr__list">Весь список городов﻿</div>        
-					<a href="" class="btn">Далее</a>
-				</div>
-			</div>
-			<div class="ordering-form__deliv">
-				<div class="">
-					<label class="ordering-label"><p>Местоположение</p>
-						<input type="text" class="ordering-input" placeholder="Самара, Самарская область, Поволжье, Россия">
-					</label>
-					<label class="ordering-label"><p>Индекс</p>
-						<input type="text" class="ordering-input" placeholder="443123">
-					</label>
-					<label class="ordering-label"><p>Адрес доставки</p>
-						<input type="text" class="ordering-input" placeholder="ул. Мирная, д. 87, кор.2а">
-					</label>
-				</div>
-				<div class="delivery-method">
-					
-				</div>                                
-			</div>                         
+                      
 		</form>
 	</div>                                                                                                                                             
 </section>

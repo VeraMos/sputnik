@@ -1575,6 +1575,15 @@ a:hover {
   height: 40px;
   padding: 10px 20px;
   margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #282828;
+}
+
+.ordering-input::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+  color: #282828;
 }
 
 .ordering-label p {
@@ -1866,4 +1875,159 @@ a:hover {
 
 .ordering-form__deliv {
   display: none;
+}
+
+.ordering-form__nal {
+  position: relative;
+  padding: 0 0 20px;
+  margin:  0 0 40px;
+}
+
+.ordering-form__nal:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #CACACA;
+  height: 1px;
+  width: 100%;
+}
+
+.ordering-form__beznal {
+  max-width: 667px;
+}
+
+.payment .ordering-input {
+  width: 57% ;
+}
+
+.ordering-form__beznal {
+  display: none;
+}
+
+.ordering-form__beznal.active {
+  display: block;
+}
+
+.payment {
+  padding: 0 0 100px;
+}
+
+.payment-form {
+  padding-top: 50px;
+}
+
+.table-prod {
+  max-width: 667px;
+  width: 100%;
+}
+
+.table-prod td {
+  background: #fff;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  padding: 12px 10px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.table-prod__img {  
+  background: #fff;
+  max-width: 63px; 
+}
+
+.table-prod td:nth-child(2) {
+  text-align: left;
+  max-width: 210px;
+}
+
+.table-prod td:nth-child(2) p{
+  margin: 0;
+}
+
+.table-prod__img img {
+  width: 100%;
+  width: 69px;
+  height: 69px;
+  display: block;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.table-prod td span {
+  font-weight:400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.btn-payment {
+  margin: 68px auto 42px;
+  width: 300px;
+}
+
+.policy-payment {
+  max-width: 772px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.policy-payment a {
+  color: #282828;
+  text-decoration: underline;
+}
+
+.policy-payment a:hover {
+  text-decoration: none;
+}
+
+.order {
+  width: 370px;
+  height: 290px;
+  padding: 48px 23px 56px 28px;
+  background: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: absolute;
+  top: 49%;
+  right: 7%;
+}
+
+.order-block {
+  display: flex;
+  font-size: 20px;
+  line-height: 25px;
+  justify-content: space-between;
+}
+
+.order-block span {
+  text-align: right;
+  font-weight: 450;
+}
+
+.order-metod {
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 34px;
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.order-metod:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #CACACA;
+  height: 1px;
+  width: 100%;
+}
+
+.order-metod p {
+  margin: 0;
 }
