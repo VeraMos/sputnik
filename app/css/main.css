@@ -2031,3 +2031,74 @@ a:hover {
 .order-metod p {
   margin: 0;
 }
+
+.catalog {
+  padding-bottom: 280px;
+}
+
+.catalog-list__wpr {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 35px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item {
+  padding: 95px 30px 27px;
+  background-color: #fff;
+  margin: 15px;
+  max-width: 370px;
+}
+
+.catalog-item__ttl {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #282828;
+}
+
+.catalog-item__ttl:hover {
+  color: #56973D;
+}
+
+
+.catalog-item__list {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-item__list a {
+  color: #282828;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.catalog-item__list a:hover {
+  text-decoration: none;
+  color: #56973D;
+}
+
+.catalog-item__list li {
+  position: relative;
+  padding-left: 25spx;
+  margin: 0 0 10px;
+}
+
+.catalog-item__list li:before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";  
+  background: #56973D;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
