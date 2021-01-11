@@ -2050,10 +2050,12 @@ a:hover {
 }
 
 .catalog-item {
-  padding: 95px 30px 27px;
+  padding: 95px 30px 33px;
   background-color: #fff;
   margin: 15px;
   max-width: 370px;
+  position: relative;
+  overflow: hidden;
 }
 
 .catalog-item__ttl {
@@ -2088,7 +2090,7 @@ a:hover {
 
 .catalog-item__list li {
   position: relative;
-  padding-left: 25spx;
+  padding-left: 25px;
   margin: 0 0 10px;
 }
 
@@ -2101,4 +2103,14 @@ a:hover {
   width: 7px;
   height: 7px;
   border-radius: 50%;
+}
+
+.catalog-item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 162px;
+  width: 132px;
 }
