@@ -149,7 +149,8 @@ $(document).ready(function () {
       asNavFor: '.slider-for',
       dots: false,
       prevArrow: '<button class="prev-left__p"></button>',
-      nextArrow: '<button class="prev-right__p"></button>'
+      nextArrow: '<button class="prev-right__p"></button>',
+      focusOnSelect: true,
       //centerMode: true,
       //focusOnSelect: true
     });                              
