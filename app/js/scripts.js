@@ -153,6 +153,12 @@ $(document).ready(function () {
       focusOnSelect: true,
       //centerMode: true,
       //focusOnSelect: true
-    });                              
+    });
+
+    $('.header__menu-toggle').on('click', function(e) {
+      e.preventDefault();
+      $(this).toggleClass('header__menu-toggle--active');
+      $('.header-menu').toggleClass('active');
+    });                            
 
 });

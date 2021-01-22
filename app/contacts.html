@@ -61,10 +61,13 @@
 
 
 <section class="banner">
-	<div class="banner-header">
+	<div class="banner-header banner-header__inner">
 		<div class="container">
 			<div class="banner-header__inn">
-				<img src="img/logo.png" alt="Логотип">
+				<div class="banner-header__img">
+					<img src="img/logo.png" alt="Логотип">
+					<button class="header__menu-toggle" type="button"><span></span></button>
+				</div>
 				<ul class="banner-header__list">
 					<li><a class="banner-header__link" href="">Регистрация</a></li>
 					<li><a class="banner-header__link" href="">Заказать обратный звонок</a></li>
@@ -177,7 +180,10 @@
 						<p>Сб 10.00 — 16.00</p>
 					</div>
 					<div class="contacts-inn__img">
-						<img src="img/cont-img.jpg" alt="Контакты">
+						<picture>
+							<source srcset="img/cont-img__mob.png" media="(max-width: 425px)">
+							<img src="img/cont-img.jpg" alt="Контакты">
+						</picture>
 					</div>
 				</div>
 			</section>
@@ -198,7 +204,10 @@
 						<p>Сб 10.00 — 16.00</p>
 					</div>
 					<div class="contacts-inn__img">
-						<img src="img/cont-img.jpg" alt="Контакты">
+						<picture>
+							<source srcset="img/cont-img__mob.png" media="(max-width: 425px)">
+							<img src="img/cont-img.jpg" alt="Контакты">
+						</picture>
 					</div>
 				</div>
 			</section>
@@ -278,10 +287,13 @@
 			</div>
 		</div>
 		<div class="footer-copy d-flex flex-wrap">
-			<img src="img/logo-f.png" alt="Спутник">
-			<p>2020 © Компания «Спутник» Все права защищены</p>
-			<a href="" class="footer-policy">Политика конфеденциальности</a>
-			<img src="img/cards.png" alt="способы оплаты">
+			<div class="footer-logo__mob">
+				<img src="img/logo-f.png" alt="Спутник" class="">
+				<p>2020 © Компания «Спутник» Все права защищены</p>
+			</div>
+			<a href="" class="footer-policy d-flex d-xs-none">Политика конфеденциальности</a>
+			<img class="footer-copy__cards" src="img/cards.png" alt="способы оплаты">
+			<a href="" class="footer-policy d-none d-xs-flex">Политика конфеденциальности</a>
 		</div>	
 	</div>
 </footer>

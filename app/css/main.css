@@ -2663,6 +2663,10 @@ a:hover {
   padding: 0 30px 30px;
 }
 
+.header__menu-toggle {
+  display: none;
+}
+
 .private__item-ttl {
   font-weight: 600;
   font-size: 30px;
@@ -2677,4 +2681,15 @@ a:hover {
 
 .private__item:hover {
   background: #447731;
+}
+
+.serv-centr__img-mob {
+  display: none;
+}
+
+.footer-logo__mob {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  align-items: center;
 }
