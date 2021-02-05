@@ -2693,3 +2693,7 @@ a:hover {
   width: 400px;
   align-items: center;
 }
+
+.ordering-map img {
+  width: 100%;
+}
