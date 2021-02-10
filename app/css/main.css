@@ -2883,3 +2883,19 @@ a:hover {
 .pagin-block__btn:hover svg path{
   stroke: #fff!important;
 }
+
+.articles-img img {
+  width: 100%;
+}
+
+.articles-img {
+  margin: 0 0 15px;
+}
+
+.articles {
+  padding-bottom: 90px;
+}
+
+.news {
+  padding-bottom: 90px;
+}
