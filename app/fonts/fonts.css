@@ -38,3 +38,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url('opensans.woff2') format('woff2'),
+        url('opensans.woff2') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
