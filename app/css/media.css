@@ -70,6 +70,14 @@
     	margin: 0 15px 0 0;
 	}
 
+	.about-deliv__item {
+		width: 30%;
+	}
+
+	.about-block__list {
+		width: 40%;
+	}
+
 }
 
 @media screen and (max-width: 992px) {
@@ -310,6 +318,64 @@
 		margin: 15px 10px 0;
 	}
 
+	.news-inner__img {
+    	float: none;
+   		margin: 20px auto;
+	}
+
+	.news-inner__block:before {
+		top: 20px;
+	}
+
+	.news-inner__item {
+  		width: 100%;
+	}
+
+	.news-inner__list-m {
+		flex-direction: column-reverse;
+	}
+
+	.news-inner__block {
+		padding: 10px 20px;
+	}
+
+	.about-block {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.about-block__list {
+    	width: 100%;
+    	margin: 20px 0;
+    	max-width: 576px;
+    }
+
+    .about-block__item {
+    	max-width: 100%;
+    }
+
+    .about {
+    	padding-bottom: 0px;
+    }
+
+    .our-brаnds__item {
+    	width: 150px;
+    }
+
+    .about-deliv {
+    	padding: 30px 0;
+	}
+
+	.about-deliv__img {
+    	margin-top: -35px;
+    }
+
+    .about-deliv__item {
+    	width: 28%;
+    	font-size: 40px;
+    	line-height: 45px;
+	}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -465,6 +531,15 @@
 		width: 100%;
 	}
 
+	.our-brаnds {
+		padding: 25px 0;
+	}
+
+	.about-deliv__item p {
+		font-size: 30px;
+    	line-height: 40px;
+	}
+
 }
 
 @media screen and (max-width: 425px) {
@@ -492,6 +567,7 @@
 
     .news-item {
     	width: 100%;
+    	max-width: 100%;
 	}
 
 	.form-inn {
@@ -529,16 +605,55 @@
     	margin: 0 auto 10px;
 	}
 
+	.news-inner__wrap {
+   		padding: 20px 0 25px;
+	}
+
+	.pagin-block__list a {
+    	font-size: 16px;
+    	padding: 4px 7px;
+    }
+
+    .pagin-block__btn {
+    	margin: 0 7px;
+    }
+
+    .about-block__item p {
+    	font-size: 40px;
+    	line-height: 45px;
+    }
+
+    .about-block__item span {
+    	font-size: 40px;
+    	line-height: 45px;
+    }
+
+    .about-deliv__list {
+    	justify-content: center;
+    }
+
+    .about-deliv__item {
+    	width: 100%;
+    	padding: 20px 0 0;
+    }
+
 }
 
 
 @media screen and (max-width: 375px) {
-
+	.section-ttl {
+    	font-size: 30px;
+   	 	line-height: 37px;
+	}
 
 }
 
 @media screen and (max-width: 320px) {
 	.footer-logo__mob img {
-    width: 100px;
+    	width: 100px;
+	}
+
+	.header-top__icon-link {
+		margin: 0;
 	}
 }
