@@ -3160,6 +3160,7 @@ a:hover {
   margin-bottom: 1px;  
   background: #F5F5F5;
   padding: 20px 25px;
+  display: block;
 }
 
 .left-menu__img-hover {
@@ -3188,4 +3189,8 @@ a:hover {
   line-height: 16px;
   color: #FFFFFF;
   margin: 0 0 0 25px;
+}
+
+.left-menu__item-wpr {
+  position: fixed;
 }
