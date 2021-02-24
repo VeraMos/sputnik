@@ -3301,3 +3301,7 @@ a:hover {
 .banner__bottom-menu__list-inn {
   background: #56973D; 
 }
+
+.left-menu__mobile {
+  display: none;
+}

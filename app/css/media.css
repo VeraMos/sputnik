@@ -78,6 +78,44 @@
 		width: 40%;
 	}
 
+	.left-menu {
+		display: none;
+	}
+
+	.left-menu__mobile {
+  		display: block;
+	}
+
+	.left-menu__mobile .left-menu__item-wpr {
+    	position: relative;
+    	display: flex;
+    	flex-wrap: wrap;
+    	background: #fff;
+    	padding-bottom: 30px;
+	}
+
+	.left-menu__mobile .left-menu__item {
+    	width: 19%;
+    	height: auto;
+    	display: block;
+    	margin: 1px;
+    }
+
+    .left-menu__mobile .left-menu__item p {
+    	color: #282828;
+    	text-align: center;
+    	margin: 15px auto;
+    }
+
+    .left-menu__mobile .left-menu__item:hover .left-menu__img-hover {
+    	display: block;
+    	margin: 0 auto;
+    }
+
+    .left-menu__mobile .left-menu__item:hover p {
+    	color: #fff;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -376,6 +414,14 @@
     	line-height: 45px;
 	}
 
+	.left-menu__mobile .left-menu__item {
+    	width: 24%;
+    }
+
+    .bottom-menu__search-b2b {
+    	width: 84%;
+	}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -540,6 +586,10 @@
     	line-height: 40px;
 	}
 
+	.left-menu__mobile .left-menu__item {
+    	width: 29%;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -635,6 +685,10 @@
     .about-deliv__item {
     	width: 100%;
     	padding: 20px 0 0;
+    }
+
+    .left-menu__mobile .left-menu__item {
+    	width: 49%;
     }
 
 }
