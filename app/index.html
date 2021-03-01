@@ -74,7 +74,7 @@
 							<path d="M1 1L5 5L9 1" stroke="white" stroke-width="2"/>
 						</svg></a>
 					</li>
-					<li><a class="banner-header__link" href="#check-in" data-fancybox="">Заказать обратный звонок</a></li>
+					<li><a class="banner-header__link" href="#popup-call" data-fancybox="">Заказать обратный звонок</a></li>
 					<li><a class="banner-header__link" href="#entry-b2b" data-fancybox="">Вход В2В
 						<span class="icon-b2b"></span>		
 					</a></li>
@@ -408,7 +408,7 @@
 			<a href="" class="popup__link">Забыли&nbsp;пароль?</a>
 		</div>
 		<p class="popup-text">Если вы новый партнер компании, заполните фоля формы для регистрации</p>
-		<a class="entry-b2b__link" href="">Регистрация</a>
+		<a class="entry-b2b__link" href="#check-in" data-fancybox="">Регистрация</a>
 	</form>	
 </div>
 
@@ -433,6 +433,15 @@
 			<input class="entry-b2b__input" type="text" placeholder="">
 			<input class="entry-b2b__input" type="text" placeholder="код с картинки">
 		</div>
+		<button type="submit" class="popup__btn">Отправить</button>
+	</form>	
+</div>
+
+<div id="popup-call" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Обратный звонок</p>
+	<form class="popup-form">
+		<input class="entry-b2b__input" type="text" placeholder="Ваше имя*">
+		<input class="entry-b2b__input" type="tel" placeholder="Телефон*">
 		<button type="submit" class="popup__btn">Отправить</button>
 	</form>	
 </div>
