@@ -74,7 +74,7 @@
 							<path d="M1 1L5 5L9 1" stroke="white" stroke-width="2"/>
 						</svg></a>
 					</li>
-					<li><a class="banner-header__link" href="">Заказать обратный звонок</a></li>
+					<li><a class="banner-header__link" href="#check-in" data-fancybox="">Заказать обратный звонок</a></li>
 					<li><a class="banner-header__link" href="#entry-b2b" data-fancybox="">Вход В2В
 						<span class="icon-b2b"></span>		
 					</a></li>
@@ -396,17 +396,76 @@
 	</div>
 </footer>
 
-<div id="entry-b2b" class="entry-b2b" style="display: none;">
+<div id="entry-b2b" class="entry-b2b popup" style="display: none;">
 	<img src="img/logo-g.png" alt="Логотип">
-	<p>Вход для партнеров</p>
-	<p>Если вы уже являетесь нашим партнером и получили у своего менеджера данные для доступа на сайт, введите их ниже</p>
-	<form>
+	<p class="popup-ttl">Вход для партнеров</p>
+	<p class="popup-text">Если вы уже являетесь нашим партнером и получили у своего менеджера данные для доступа на сайт, введите их ниже</p>
+	<form class="popup-form">
 		<input class="entry-b2b__input" type="text" placeholder="Логин">
 		<input class="entry-b2b__input" type="text" placeholder="Пароль">
-		<button type="submit" value="Войти"></button>
-		<p>Если вы новый партнер компании, заполните фоля формы для регистрации</p>
+		<div class="popup__btn-wpr">
+			<button type="submit" class="popup__btn" style="max-width: 180px;">Войти</button>
+			<a href="" class="popup__link">Забыли&nbsp;пароль?</a>
+		</div>
+		<p class="popup-text">Если вы новый партнер компании, заполните фоля формы для регистрации</p>
 		<a class="entry-b2b__link" href="">Регистрация</a>
 	</form>	
+</div>
+
+<div id="check-in" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Регистрация</p>
+	<form class="popup-form">
+		<input class="entry-b2b__input" type="tel" placeholder="ФИО*">
+		<div class="popup__input-wpr">
+			<input class="entry-b2b__input" type="tel" placeholder="+7 ( ___ ) ___ - __ - __*">
+			<input class="entry-b2b__input" type="email" placeholder="e-mail*">
+		</div>
+		<input class="entry-b2b__input" type="text" placeholder="Регион*">
+		<input class="entry-b2b__input" type="text" placeholder="Компания*">
+		<input class="entry-b2b__input" type="text" placeholder="Вид деятельности">
+		<div class="popup__input-wpr">
+			<input class="entry-b2b__input" type="text" placeholder="ИНН*">
+			<input class="entry-b2b__input" type="text" placeholder="КПП*">
+		</div>
+		<input class="entry-b2b__input" type="text" placeholder="Комментарий">
+		<span>Вы не робот?</span>
+		<div class="popup__input-wpr">
+			<input class="entry-b2b__input" type="text" placeholder="">
+			<input class="entry-b2b__input" type="text" placeholder="код с картинки">
+		</div>
+		<button type="submit" class="popup__btn">Отправить</button>
+	</form>	
+</div>
+
+<div id="password-recovery" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Восстановление пароля</p>
+	<p class="popup-text">Введите номер действующего мобильного телефона<br> -<br> После ввода номера телефона, вам придет sms с кодом для восстановления пароля. Введите код в окне и нажите «Отправить»</p>
+	<form class="popup-form">
+		<input class="entry-b2b__input" type="tel" placeholder="Телефон">
+		<input class="entry-b2b__input" type="text" placeholder="Код">
+		<button type="submit" class="popup__btn">Отправить</button>
+	</form>	
+</div>
+
+<div id="password-recovery1" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Восстановление пароля</p>
+	<form class="popup-form">
+		<input class="entry-b2b__input" type="text" placeholder="Придумайте пароль">
+		<input class="entry-b2b__input" type="text" placeholder="Повторите пароль">
+		<button type="submit" class="popup__btn">Отправить</button>
+	</form>	
+</div>
+
+<div id="password-ок" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Спасибо, вы зарегистрированы</p>
+	<p class="popup-text">В ближайшее время наш менеджер свяжется с вами и вышлет на указанную почту логин и пароль для входа</p>
+	<div class="popou-img"><img src="img/pas-ok.svg"></div>
+</div>
+
+<div id="password-change" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Ваш пароль изменен</p>
+	<p class="popup-text">Теперь вы можете зайти в свою учетную запись</p>
+	<div class="popou-img"><img src="img/pas-ok.svg"></div>
 </div>
 
 	
