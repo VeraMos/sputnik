@@ -22,7 +22,7 @@
 	}
 
 	.banner-header__icon {
-		max-width: 60px;
+		max-width: 130px;
 	}
 
 	.banner-header__link {
@@ -114,6 +114,10 @@
 
     .left-menu__mobile .left-menu__item:hover p {
     	color: #fff;
+    }
+
+    .banner-header__icon-link {
+    	margin: 2px 5px;
     }
 
 }
@@ -420,6 +424,10 @@
 
     .bottom-menu__search-b2b {
     	width: 84%;
+	}
+
+	.banner-header__list li {
+		margin: 5px 8px;
 	}
 
 }

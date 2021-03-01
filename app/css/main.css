@@ -252,6 +252,7 @@ a:hover {
   padding: 18px 20px;  
   display: block;
   text-align: center;
+  position: relative;
 }
 
 .banner-header__list li {
@@ -3304,4 +3305,18 @@ a:hover {
 
 .left-menu__mobile {
   display: none;
+}
+
+.icon-b2b {
+  position: absolute;
+  right: -14px;
+  bottom: -10px;
+  width: 34px;
+  height: 34px;
+  background: url(../img/b2b-l.svg) #FFD200;
+  background-position: 50% 50%;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 10px;
 }
