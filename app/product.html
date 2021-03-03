@@ -64,7 +64,7 @@
 		<div class="container">
 					<div class="banner-header__inn">
 				<div class="banner-header__img">
-					<img src="img/logo.png" alt="Логотип">
+					<a href="/"><img src="img/logo.png" alt="Логотип"></a>
 					<button class="header__menu-toggle" type="button"><span></span></button>
 				</div>
 				<ul class="banner-header__list">
@@ -224,7 +224,7 @@
             		</div>
             		<span>Шт.</span>
 					<button class="product-desc__cart" type="button">В корзину</button>
-					<a href="" class="product-desc__buy-clck">Купить в один клик</a>
+					<a href="#buy-click" class="product-desc__buy-clck" data-fancybox="">Купить в один клик</a>
 				</div>
 				<p class="product-desc__min">Минимальное колличество для заказа  1 шт.</p>
 				<div class="product-desc__link-block">
@@ -242,7 +242,7 @@
 					</div>
 					<div class="product-desc__link-item">
 						<div class="product-desc__link-img"><img src="img/pr-dec-svg4.svg" alt="Нашли дешевле?"></div>
-						<a href="">Нашли дешевле?</a>
+						<a href="#found-cheaper" data-fancybox="">Нашли дешевле?</a>
 					</div>
 					<div class="product-desc__link-item">
 						<div class="product-desc__link-img"><img src="img/pr-dec-svg5.svg" alt="Рассчитать доставку"></div>
@@ -419,6 +419,29 @@
 		</div>	
 	</div>
 </footer>
+
+<div id="buy-click" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Купить в 1 клик</p>
+	<form class="popup-form">
+		<input class="entry-b2b__input" type="text" placeholder="Ф.И.О.">
+		<input class="entry-b2b__input" type="tel" placeholder="Телефон*" required="">
+		<input class="entry-b2b__input" type="email" placeholder="E-mail*" required="">
+		<p class="popup__policy-black">Отправляя форму вы соглашаетесь на <a href="">обработку персональных данных</a></p>
+		<button type="submit" class="popup__btn">Отправить</button>
+	</form>	
+</div>
+
+<div id="found-cheaper" class="entry-b2b popup" style="display: none;">
+	<p class="popup-ttl mt-0">Нашли дешевле?</p>
+	<form class="popup-form">
+		<input class="entry-b2b__input" type="text" placeholder="Ваше имя*">
+		<input class="entry-b2b__input" type="tel" placeholder="Номер телефона*" required="">
+		<input class="entry-b2b__input mb-0" type="text" placeholder="Ссылка на страницу:" required="">
+		<span>Укажите ссылку на страницу, где вы нашли товар дешевле</span>
+		<p class="popup__policy-black">Отправляя форму вы соглашаетесь на <a href="">обработку персональных данных</a></p>
+		<button type="submit" class="popup__btn">Отправить</button>
+	</form>	
+</div>
 
 	
 <script src="js/libs.min.js"></script>

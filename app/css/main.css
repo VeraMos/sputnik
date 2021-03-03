@@ -2562,7 +2562,7 @@ a:hover {
   border-radius: 5px;
   max-width: 467px;
   margin-top: -7px;
-  z-index: 5;
+  z-index: 4;
   position: relative;
 }
 
@@ -3416,5 +3416,13 @@ a:hover {
   text-align: left;
   display: block;
   margin-bottom: 10px;
+}
 
+.popup__policy-black a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.popup__policy-black a:hover {
+  text-decoration: none;
 }
