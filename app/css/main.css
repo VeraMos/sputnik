@@ -3202,14 +3202,30 @@ a:hover {
   display: none;
 }
 
-.left-menu__item:hover {
-  background: #56973D;
+.left-menu__item-wpr:hover .left-menu__item {
+  background: #FFFFFF;
   width: 209px;
   display: flex;
-  align-items: center;;
+  align-items: center;
 }
 
-.left-menu__item:hover .left-menu__img-hover{
+.left-menu__item-wpr:hover .left-menu__item p{
+  color: #000!important;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 0 -13px;
+  text-align: left;
+}
+
+.left-menu__item:hover  {
+  background: #56973D!important;
+  width: 209px;
+  display: flex;
+  align-items: center;
+}
+
+.left-menu__item-wpr:hover .left-menu__img-hover{
   display: block;
 }
 
@@ -3217,11 +3233,11 @@ a:hover {
   display: none;
 }
 
-.left-menu__item p {
+.left-menu__item-wpr:hover .left-menu__item:hover p {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #FFFFFF!important;
   margin: 0 0 0 25px;
   text-align: left;
 }

@@ -430,6 +430,11 @@
 		margin: 5px 8px;
 	}
 
+	.product__ttl {
+    	font-size: 35px;
+    	line-height: 40px;
+	}
+
 }
 
 @media screen and (max-width: 640px) {
