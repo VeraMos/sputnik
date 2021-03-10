@@ -3477,12 +3477,13 @@ a:hover {
 
 .my-orders__table td {
   font-size: 14px;
-  line-height: 35px;
+  line-height: 22px;
   color: #000000;
   text-align: center;
   padding: 22px 8px 20px;
   border-top: 1px solid #DADADA;
   border-bottom: 1px solid #DADADA;
+  vertical-align: top
 }
 
 .my-orders__table td:first-child {
@@ -3753,3 +3754,17 @@ a:hover {
   padding: 0 8px;
 }
 
+.my-compan .docs-table td::before {
+  height: 87%;
+}
+
+.banner-header__b2b {
+  background: url('../img/header-b2b-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.table__wrap {
+  overflow-x: scroll;
+}
