@@ -3500,9 +3500,9 @@ a:hover {
   margin: 0 2.5px;
 }
 
-.my-orders__link-exl svg {
+/*.my-orders__link-exl svg {
   margin-top: -7px;
-}
+}*/
 
 .my-orders__link-green {
   width: 30px;
@@ -3514,9 +3514,9 @@ a:hover {
   margin: 0 2.5px;
 }
 
-.my-orders__link-green svg {
+/*.my-orders__link-green svg {
   margin-top: -7px;
-}
+}*/
 
 .my-orders__change {
   width: 175px;
@@ -3615,7 +3615,7 @@ a:hover {
 .table-ttl {
   font-weight: 450;
   font-size: 30px;
-  line-height: 50px;
+  line-height: 35px;
   color: #282828
 }
 
@@ -3773,4 +3773,28 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 35px 0 95px;
+  margin: 0 -15px;
+  justify-content: center;
 }
+
+.training-item {
+  margin: 15px;
+  max-width: 270px;
+}
+
+.training-img img {
+  width: 100%;
+}
+
+.training-item p {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  padding: 15px 0 0;
+  margin: 0;
+}
+
+.table-filter__wpr select {
+  padding-left: 30px;
+}
+

@@ -435,6 +435,23 @@
     	line-height: 40px;
 	}
 
+	.table-filter {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.table-filter__label.search .table-filter__icon {
+		left: 90%;
+	}
+
+	.table__wrap {
+  		overflow-x: scroll;
+	}
+
+	.banner-header__b2b {
+		background-position: left -40px;
+	}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -603,6 +620,14 @@
     	width: 29%;
     }
 
+    .banner-header__b2b {
+    	background-position: left -15px;
+    }
+
+    .table-filter__label.search .table-filter__icon {
+    	left: 85%;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -704,6 +729,25 @@
     	width: 49%;
     }
 
+    .table-filter__label.search {
+    	width: 77%;
+    	margin-left: 10px;
+    }
+
+    .table-filter__label.search .table-filter__icon {
+    	left: 88%;
+	}
+
+	.table-filter__label.calend {
+		width: 142px;
+	}
+
+	.table-filter__label {
+		width: 142px;
+	}
+
+
+
 }
 
 
@@ -711,6 +755,10 @@
 	.section-ttl {
     	font-size: 30px;
    	 	line-height: 37px;
+	}
+
+	.table-filter__label.search {
+    	width: 89%;
 	}
 
 }
@@ -723,4 +771,12 @@
 	.header-top__icon-link {
 		margin: 0;
 	}
+
+	.table-filter__label {
+		margin: 0 1px;
+	}
+
+	.table-filter__label.search {
+    	width: 100%;
+    	margin-left: 0;
 }
