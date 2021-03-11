@@ -141,6 +141,19 @@
     	line-height: 20px;
 	}
 
+	.order {
+		top: 50%;
+    	right: 3%;
+	}
+
+	.ordering-form__beznal {
+    	max-width: 570px;
+	}
+
+	.table-prod {
+    	max-width: 570px;
+	}
+
 }
 
 @media screen and (max-width: 992px) {
@@ -546,6 +559,32 @@
 		margin-top: 0px;
 	}
 
+	.ordering-form__beznal {
+    	max-width: 100%;
+	}
+
+	.table-prod {
+    	max-width: 100%;
+	}
+
+	.order {
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 20px;
+	}
+
+	.payment .ordering-input {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.payment-form {
+    	padding-top: 20px;
+	}
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -672,7 +711,7 @@
 
    	.basket-table__wrapper {
    		display: flex;
-   		flex-direction: column;
+   		flex-wrap: wrap;
    	}
 
    	.basket-table td {
@@ -758,6 +797,48 @@
 	.man-b2b__block {
 		margin: 0 auto;
 	}
+
+	.table-prod tr {
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #cacaca;
+		margin-bottom: 20px;
+	}
+
+	.table-prod td {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.table-prod__img {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.table-prod td:nth-child(2) {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.table-prod__img img {
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.table-prod td:nth-child(3) {
+		width: 50%;
+	}
+	.table-prod td:nth-child(4) {
+		width: 50%;
+	}
+
+	.basket-table__img {
+    	width: 50%;
+    	height: auto;
+    	margin: 0 auto;
+    }
 
 }
 
