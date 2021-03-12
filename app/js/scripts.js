@@ -159,6 +159,15 @@ $(document).ready(function () {
       e.preventDefault();
       $(this).toggleClass('header__menu-toggle--active');
       $('.header-menu').toggleClass('active');
-    });                            
+    });
+
+    $('.catalog-link').on('click', function(e) {
+        e.preventDefault();
+      $('.catal-dropdown__menu').toggleClass('active');
+    });
+
+    $('.catal-dropdown__menu-btn').on('click', function(e) {
+      $('.catal-dropdown__menu').removeClass('active');
+    });                           
 
 });

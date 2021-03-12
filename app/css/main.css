@@ -3338,7 +3338,21 @@ a:hover {
 }
 
 .banner__bottom-menu__list-inn {
-  background: #56973D; 
+  background: #fff;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.banner__bottom-menu__list-inn .banner__bottom-menu__link-inn {
+  color: #000;
+}
+
+.banner__bottom-menu__list-inn li:first-child {
+    border-left: none;
+}
+
+.banner__bottom-menu__list-inn li:hover {
+  background: #f3f3f3;
 }
 
 .left-menu__mobile {
@@ -3819,5 +3833,86 @@ a:hover {
 
 .slick-slide img {
   width: 100%;
+}
+
+.catal-dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 178px;
+  left: 12%;  
+  z-index: 10;
+}
+
+.catal-dropdown__menu-inn {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+  padding: 50px 15px 10px;
+  display: flex;
+  position: relative;
+}
+
+.catal-dropdown__menu.active{
+  display: block;
+}
+
+.catal-dropdown__menu-list {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 15px;
+  position: relative;
+}
+
+.catal-dropdown__menu-item {
+  margin-bottom: 25px;
+}
+
+.catal-dropdown__menu-item .catalog-item__list {
+  margin: 5px 0 0;
+}
+
+.catal-dropdown__menu-item .catalog-item__list li:before {
+  background: transparent;
+}
+
+.catal-dropdown__menu-item .catalog-item__list a {
+  font-size: 15px;
+  line-height: 22px;
+  color: #737373;
+}
+
+.catal-dropdown__menu-item .catalog-item__list li {
+  padding-left: 0;
+  margin: 0;
+}
+
+.catal-dropdown__menu-item .catalog-item__list a:hover {
+  color: #447731;
+  text-decoration: underline;
+}
+
+.catal-dropdown__menu-item .catalog-item__ttl {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.catal-dropdown__menu-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.catal-dropdown__menu-inn:before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: 34%;
+  width: 16px;
+  height: 12px;
+  background-image: url(../img/treug.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 

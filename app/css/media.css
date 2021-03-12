@@ -4,15 +4,23 @@
 }
 
 @media screen and (max-width: 1400px) {
-	
+	.catal-dropdown__menu {
+		left: 5%;
+	}
 
 }
 
 @media screen and (max-width: 1200px) {
-
+	.catal-dropdown__menu-inn {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 1024px) {
+	.catal-dropdown__menu-inn {
+		width: 75%;
+	}
+
 	.header-top__tel {
 		max-width: 180px;
 	}
@@ -157,6 +165,10 @@
 }
 
 @media screen and (max-width: 992px) {
+	.catal-dropdown__menu {
+		display: none!important;
+	}
+
 	.banner__bottom-menu__list {
 		margin: 0 7px 0 0;
 	}
