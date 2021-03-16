@@ -227,7 +227,7 @@
 				</div>
 			</div>
 			<div class="ordering-form__deliv">
-				<div class="">
+				<div class="ordering-form__deliv-block">
 					<label class="ordering-label"><p>Местоположение</p>
 						<input type="text" class="ordering-input" placeholder="Самара, Самарская область, Поволжье, Россия">
 					</label>
@@ -239,10 +239,26 @@
 					</label>
 				</div>
 				<div class="delivery-method">
-					<select>
+					<select class="delivery-method__select">
 						<option>Выберите вариант</option>
 						<option>Почта России</option>
 					</select>
+					<div class="delivery-method__inn active">						
+						<p class="delivery-method__text">Экспресс-отправления EMS — это самый быстрый и удобный способ доставить  посылку по России и за границу. отправить и получить экспресс-отправление можно через отделение Почты России.</p>
+						<img class="delivery-method__inn-img" src="img/pochta-rossii.jpg" alt="Почта России"> 
+					</div>
+					<div class="d-flex justify-content-between">
+						<div class="delivery-method__cost">
+							<img src="img/del-cost.svg" alt="Стоимость доставки">
+							<p>Стоимость доставки:</p>
+							<span>805 ₽</span>
+						</div>
+						<div class="delivery-method__time">
+							<img src="img/del-time.svg" alt="Срок доставки">
+							<p>Срок доставки:</p>
+							<span>от 1 до 2 раб. дней</span>
+						</div>
+					</div>
 				</div>                                
 			</div>                         
 		</form>

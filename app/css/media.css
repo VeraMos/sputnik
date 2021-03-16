@@ -596,6 +596,30 @@
     	padding-top: 20px;
 	}
 
+	.ordering-form__deliv.active {
+		flex-wrap: wrap;
+	}
+
+	.ordering-form__deliv-block {
+    	width: 100%;
+     }
+
+	 .delivery-method {
+	 	width: 100%;
+	 	position: relative;
+	 	margin-top: 40px;
+	 }
+
+	 .delivery-method:before {
+	 	position: absolute;
+	 	top: -10px;
+	 	left: 0;
+	 	content: "";
+	 	width: 100%;
+	 	height: 1px;
+	 	background: #CACACA;
+	 }
+
 
 }
 
@@ -898,6 +922,10 @@
     	margin: 1px 0 0;
     }
 
+    .delivery-method {
+    	max-width: 100%;
+	}
+
 
 }
 
@@ -1131,6 +1159,16 @@
 	.catalog-item__ttl {
 		font-size: 25px;
 		line-height: 30px;
+	}
+
+	.delivery-method__inn-img {
+		position: relative;
+		top: -30px;
+    	left: 30%;
+	}
+
+	.delivery-method__select {
+		width: 100%;
 	}
 
 }
