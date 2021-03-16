@@ -168,6 +168,11 @@ $(document).ready(function () {
 
     $('.catal-dropdown__menu-btn').on('click', function(e) {
       $('.catal-dropdown__menu').removeClass('active');
+    });
+
+    $('.left-menu__item-btn').on('click', function(e) {
+      $(this).toggleClass('active');
     });                           
+                          
 
 });

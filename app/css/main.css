@@ -3974,6 +3974,41 @@ a:hover {
   top: 32px;
   right: 0;
   width: 128px;
-  height: 62px;
-  
+  height: 62px;  
+}
+
+.catalog-category {
+  display: flex;
+  flex-wrap: wrap;
+  width: 77%;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.category-wpr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-menu__category {
+  max-width: 265px;
+  width: 25%;
+}
+
+.left-menu__category-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-menu__item-btn .svg-minus {
+  display: none;
+}
+
+.left-menu__item-btn.active .svg-minus {
+  display: block;
+  margin-top: 5px;
+}
+
+.left-menu__item-btn.active .svg-plus {
+  display: none;
 }
