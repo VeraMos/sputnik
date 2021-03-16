@@ -170,7 +170,8 @@ $(document).ready(function () {
       $('.catal-dropdown__menu').removeClass('active');
     });
 
-    $('.left-menu__item-btn').on('click', function(e) {
+    $('.left-menu__category-item__wrp').on('click', function(e) {
+      $(this).parent('.left-menu__category-item').toggleClass('active');      
       $(this).toggleClass('active');
     });                           
                           
