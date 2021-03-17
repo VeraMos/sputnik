@@ -157,9 +157,17 @@ $(document).ready(function () {
 
     $('.header__menu-toggle').on('click', function(e) {
       e.preventDefault();
-      $(this).toggleClass('header__menu-toggle--active');
+      //$(this).toggleClass('header__menu-toggle--active');
       $('.header-menu').toggleClass('active');
+      $('.mobile-menu').toggleClass('active');
     });
+
+    $('.mobile-menu__close').on('click', function(e) {
+      e.preventDefault();
+      $('.mobile-menu').removeClass('active');
+    });
+
+
 
     $('.catalog-link').on('click', function(e) {
         e.preventDefault();

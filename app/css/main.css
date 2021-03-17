@@ -4175,3 +4175,16 @@ a:hover {
 .catalog-category__sort-view:active svg {
   fill: #56973D;
 }
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+  background: #fff;
+  padding-top: 27px;
+  position: absolute;
+  width: 100%;
+  z-index: 25;
+}
