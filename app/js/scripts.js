@@ -167,8 +167,10 @@ $(document).ready(function () {
       $('.mobile-menu').removeClass('active');
     });
 
-
-
+    $('.catalog-category-filter').on('click', function(e) {
+      $('.left-menu__category').toggleClass('active');
+    });
+    
     $('.catalog-link').on('click', function(e) {
         e.preventDefault();
       $('.catal-dropdown__menu').toggleClass('active');

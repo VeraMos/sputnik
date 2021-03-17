@@ -701,6 +701,28 @@
 		display: none;
 	}
 
+	.category-wpr {
+		position: relative;
+	}
+
+	.left-menu__category.active {
+		display: block;
+	    position: absolute;
+	    max-width: 100%;
+	    background: #fff;
+	    z-index: 20;
+	    top: 50px;
+	}
+
+	.left-menu__category-btn-block {
+		text-align: center;
+    	padding: 0 0 20px;
+	}
+
+	.left-menu__category-btn-block .btn-clear {
+		border: 1px solid #C9C9C9;
+	}
+
 	.catalog-category {
 		width: 100%;
 		margin: 0;
