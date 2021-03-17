@@ -4120,7 +4120,18 @@ a:hover {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0 15px 26px;
+  margin: 0 15px 40px;
+  position: relative;
+}
+
+.catalog-category__sort-wpr:after {
+  position: absolute;
+  content: "";
+  bottom: -26px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #C4C4C4;
 }
 
 .catalog-category__sort span {
@@ -4187,4 +4198,14 @@ a:hover {
   position: absolute;
   width: 100%;
   z-index: 25;
+  top: 77px;
+}
+
+.category {
+  background: #fff;
+  padding-bottom: 100px;
+}
+
+.catalog-category .act-products__item {
+  margin: 15px;
 }

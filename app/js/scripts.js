@@ -170,6 +170,12 @@ $(document).ready(function () {
     $('.catalog-category-filter').on('click', function(e) {
       $('.left-menu__category').toggleClass('active');
     });
+
+    $('.dropdown-link').on('click', function(e) {
+         e.preventDefault();
+      $('.banner__bottom-menu__list-inn').toggleClass('active');
+    });
+    
     
     $('.catalog-link').on('click', function(e) {
         e.preventDefault();
